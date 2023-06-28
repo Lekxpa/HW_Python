@@ -17,9 +17,9 @@ lst_all = []
 dict_unique = {}
 dict_items_out = {}
 
-for atribut in campaign.values():
-    if atribut not in lst:
-        lst += atribut
+for v in campaign.values():
+    if v not in lst:
+        lst += v
 
 for i in lst:
     if i not in lst_all:
