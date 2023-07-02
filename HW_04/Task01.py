@@ -18,11 +18,11 @@ f = 's'
 # all_var = globals()
 print(f'Исходные значения:\t{a = }\t{b = }\t{c = }\t{s = }\t{d = }\t{e = }\t{f = }\n')
 
-dict_v = {a: }
+# dict_v = {a: }
 
-def make_dictionary(k, l, m, n, o, p):
-    for i in 
-dict_v = 
+# def make_dictionary(k, l, m, n, o, p):
+#     for i in 
+# dict_v = 
 
 del_s_from_end(dict_v)
 print(f'Итоговые значения:\t{a = }\t{b = }\t{c = }\t{s = }\t{d = }\t{e = }\t')
