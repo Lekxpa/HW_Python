@@ -10,6 +10,7 @@ initial_matrix = [
                 [4, 5, 6],
                 [7, 8, 9]
                 ]
+
 print(*initial_matrix, sep="\n")
 matrix_turn(initial_matrix)
 print()

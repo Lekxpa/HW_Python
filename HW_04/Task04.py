@@ -23,17 +23,15 @@ def check_input(message):
         else:
             return inp
         
-
 def increase(bal, op, ls_oper):
     inc = check_input("Введите сумму пополнения: ")
     if op % COUNT_OF_OPERATIONS == 0:
         bal += bal * INTEREST_FOR_OPERATIONS
     bal += inc
-    ls_oper.append(op, 'пополнение', inc)
+    ls_oper.append((op, 'пополнение', inc))
     op += 1
     bal = check_rich(bal, op, ls_oper)
     return bal, op
-
 
 def decrease(bal, op, ls_oper):
     bal = check_rich(bal, op, ls_oper)
@@ -68,7 +66,7 @@ def start():
     operations = START_OPERATIONS
     lst = []
     while True:
-        select = int(input(f"""Баланс: {balance}
+        select = int(input(f"""\nБаланс: {balance}
 
 Операции со счётом: {operations - 1}
     

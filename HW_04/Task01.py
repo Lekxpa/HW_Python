@@ -2,28 +2,24 @@
 #  которая при запуске заменяет содержимое переменных оканчивающихся на s (кроме переменной из одной буквы s) на None. 
 # Значения не удаляются, а помещаются в одноимённые переменные без s на конце.
 
-def del_s_from_end(dict_values: dict):
-    vars_to_change = [i for i in dict_values if len(i) > 1 and i[-1] == 's']
-    for i in vars_to_change:
-        dict_values[i[:-1]] = dict_values[i]
-        dict_values[i] = None
+def func() -> None:
+    glob = globals()
+    dict = {}
+    for key, value in glob.items():
+        if key == 's':
+            continue
+        if key.endswith('s'):
+            dict[key[:-1]] = glob[key]
+            glob[key] = None
+    for key, value in dict.items():
+        glob[key] = value
 
-a = 'Togas'
-b = 'Vector'
-c = 'Vegas'
-d = 1234567
-e = 0
-f = 's'
+tadams = 'Form of max'
+vector = 'Al', 'An', 'Pan'
+motors = [2, 4, 6, 8]
+s = 1234567
 
-# all_var = globals()
-print(f'Исходные значения:\t{a = }\t{b = }\t{c = }\t{s = }\t{d = }\t{e = }\t{f = }\n')
-
-# dict_v = {a: }
-
-# def make_dictionary(k, l, m, n, o, p):
-#     for i in 
-# dict_v = 
-
-del_s_from_end(dict_v)
-print(f'Итоговые значения:\t{a = }\t{b = }\t{c = }\t{s = }\t{d = }\t{e = }\t')
-print(f"{bb = }\n{var_ = }\n")
+print(f'\nИсходные значения:\n{tadams = }\n{vector = }\n{motors = }\n{s = }\n')
+func()
+print(f'Измененные значения:\n{tadams = }\n{vector = }\n{motors = }\n{s = }\n')
+print(f'Измененные переменные:\n{tadam = }\n{vector = }\n{motor = }\n{s = }\n')
