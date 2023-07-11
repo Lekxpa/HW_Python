@@ -22,6 +22,6 @@ def rename_files(old_extens, new_name, new_extens):
             if len(findall('[aeiouyAEIOUY]', new_name)) > 0:
                 new_name = ''.join(random.sample(string.ascii_lowercase, random.randint(START, END)))
             Path(file).rename(f'{old_name}_{new_name}_{count}.{new_extens}')
-            # добавлен функционал, генерирующая псевдоимена - из задачи, которую решали на семинаре
+            # добавлен функционал, генерирующий псевдоимена - из задачи, которую решали на семинаре
 
 rename_files('txt', 'new_name', 'pdf')
