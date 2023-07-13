@@ -4,37 +4,17 @@
 # есть ли среди них пара бьющих друг друга. Программа получает на вход восемь пар чисел,
 # каждое число от 1 до 8 - координаты 8 ферзей. Если ферзи не бьют друг друга верните истину, а если бьют - ложь.
 
-# def check_eight_queens(pos: list):
-#     for row, col in pos:
-#         r, c = row, col
-#         while r < 8 or c < 8:
-#             if (r + 1, c + 1) in pos:
-#                 print('Ферзи бьют друг друга')
-#                 return False
-#             r += 1
-#             c += 1
-#         r, c = row, col
-#         while 0 <= r < 8 or 0 <= c < 8:
-#             if (r + 1, c - 1) in pos:
-#                 print('Ферзи бьют друг друга')
-#                 return False
-#             r += 1
-#             c -= 1
-#     print('Ферзи не бьют друг друга')
-#     return True
-
-
 def check_eight_queens(pos: list):
     for row, col in pos:
         r, c = row, col
-        while r <= 8 or c <= 8:
+        while r < 8 or c < 8:
             if (r + 1, c + 1) in pos:
                 print('Ферзи бьют друг друга')
                 return False
             r += 1
             c += 1
         r, c = row, col
-        while 1 <= r <= 8 or 1 <= c <= 8:
+        while 0 <= r < 8 or 0 <= c < 8:
             if (r + 1, c - 1) in pos:
                 print('Ферзи бьют друг друга')
                 return False
@@ -42,3 +22,11 @@ def check_eight_queens(pos: list):
             c -= 1
     print('Ферзи не бьют друг друга')
     return True
+
+check_data = [(0, 7), (1, 1), (2, 4), (3, 2), (4, 0), (5, 6), (6, 3), (7, 5)]
+print(f'\nДанные для задачи 1: {check_data}')
+# для проверки: 
+# ферзи не бьют друг друга - [(0, 7), (1, 1), (2, 4), (3, 2), (4, 0), (5, 6), (6, 3), (7, 5)]
+# бьют - [(0, 6), (1, 0), (2, 4), (3, 2), (4, 0), (5, 6), (6, 3), (7, 5)]
+print(check_eight_queens(check_data))
+print()
