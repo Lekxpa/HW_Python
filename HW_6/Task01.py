@@ -6,24 +6,22 @@
 
 def check_eight_queens(pos: list):
     for row, col in pos:
-        r, c = row, col
-        while r < 8 or c < 8:
-            if (r + 1, c + 1) in pos:
+        while row < 8 or col < 8:
+            if (row + 1, col + 1) in pos:
                 print('Ферзи бьют друг друга')
                 return False
-            r += 1
-            c += 1
-        r, c = row, col
-        while 0 <= r < 8 or 0 <= c < 8:
-            if (r + 1, c - 1) in pos:
+            row += 1
+            col += 1
+        while 0 <= row < 8 or 0 <= col < 8:
+            if (row + 1, col - 1) in pos:
                 print('Ферзи бьют друг друга')
                 return False
-            r += 1
-            c -= 1
+            row += 1
+            col -= 1
     print('Ферзи не бьют друг друга')
     return True
 
-check_data = [(0, 7), (1, 1), (2, 4), (3, 2), (4, 0), (5, 6), (6, 3), (7, 5)]
+check_data = [(6, 6), (2, 1), (5, 3), (1, 6), (0, 4), (6, 0), (1, 3), (5, 2)]
 print(f'\nДанные для задачи 1: {check_data}')
 # для проверки: 
 # ферзи не бьют друг друга - [(0, 7), (1, 1), (2, 4), (3, 2), (4, 0), (5, 6), (6, 3), (7, 5)]

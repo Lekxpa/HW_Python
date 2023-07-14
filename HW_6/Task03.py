@@ -1,20 +1,21 @@
 # *Выведите все успешные варианты расстановок
-from random import randint
+
 import itertools
 
 count = 0
 def queens_all_wins():
     for pos in itertools.permutations(range(8)):
         yield [x for x in enumerate(pos)]
+        
 for i in queens_all_wins():
-    err = False
-    for a, b in ((a, b) for a in i for b in i if a[0] < b[0]):
-        if abs(a[0] - b[0]) == abs(a[1] - b[1]):
-            err = True
+    chnc = False
+    for r, c in ((r, c) for r in i for c in i if r[0] < c[0]):
+        if abs(r[0] - c[0]) == abs(r[1] - c[1]):
+            chnc = True
             break
-    if not err: 
+    if not chnc: 
         count += 1
         print(i)
 
 queens_all_wins()
-print(count)
+print(f'Количество успешных расстановок:  {count}')
