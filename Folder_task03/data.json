@@ -1,0 +1,68 @@
+[
+  {
+    "name_obj": "pickle_up.csv",
+    "parent": "HW_Python",
+    "obj_type": "file",
+    "size": 192
+  },
+  {
+    "name_obj": "README.md",
+    "parent": "HW_Python",
+    "obj_type": "file",
+    "size": 13
+  },
+  {
+    "name_obj": "task02.json",
+    "parent": "HW_Python",
+    "obj_type": "file",
+    "size": 123
+  },
+  {
+    "name_obj": "task02.pickle",
+    "parent": "HW_Python",
+    "obj_type": "file",
+    "size": 122
+  },
+  {
+    "name_obj": "task04.json",
+    "parent": "HW_Python",
+    "obj_type": "file",
+    "size": 535
+  },
+  {
+    "name_obj": "task04.pickle",
+    "parent": "HW_Python",
+    "obj_type": "file",
+    "size": 235
+  },
+  {
+    "name_obj": "task2.json",
+    "parent": "HW_Python",
+    "obj_type": "file",
+    "size": 123
+  },
+  {
+    "name_obj": "task2.pickle",
+    "parent": "HW_Python",
+    "obj_type": "file",
+    "size": 122
+  },
+  {
+    "name_obj": "users.csv",
+    "parent": "HW_Python",
+    "obj_type": "file",
+    "size": 73
+  },
+  {
+    "name_obj": ".git",
+    "parent": "HW_Python",
+    "obj_type": "directory",
+    "size": 85609
+  },
+  {
+    "name_obj": "HW_8",
+    "parent": "HW_Python",
+    "obj_type": "directory",
+    "size": 4061
+  }
+]

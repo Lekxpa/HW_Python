@@ -1,0 +1,12 @@
+name_obj,parent,obj_type,size
+pickle_up.csv,HW_Python,file,192
+README.md,HW_Python,file,13
+task02.json,HW_Python,file,123
+task02.pickle,HW_Python,file,122
+task04.json,HW_Python,file,535
+task04.pickle,HW_Python,file,235
+task2.json,HW_Python,file,123
+task2.pickle,HW_Python,file,122
+users.csv,HW_Python,file,73
+.git,HW_Python,directory,85609
+HW_8,HW_Python,directory,4061
