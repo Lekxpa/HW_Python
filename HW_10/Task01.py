@@ -40,6 +40,7 @@ class Mammal(Animals):
 
 
 class Factory:
+    
     @staticmethod
     def anim_factory(cls, typeofanimal, *args):
         return cls(typeofanimal, args)
