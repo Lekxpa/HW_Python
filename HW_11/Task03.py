@@ -52,6 +52,12 @@ class Rectangle:
 
     def __ge__(self, other):
         return self.square() >= other.square()
+    
+    def __str__(self):
+        return f'{self.length}, {self.width}'
+
+    def __repr__(self):
+        return f'({self.length}, "{self.width}")'
 
 
     # def __ge__(self, other):
