@@ -10,6 +10,11 @@
 # Должны работать все шесть операций сравнения
 
 class Rectangle:
+    """
+        Дорабатываем класс Прямоугольник - добавляем 
+        возможность сложения и вычитания
+        Создается новый экземпляр  
+    """
 
     def __init__(self, length, width=None):
         self.length = length
@@ -61,3 +66,4 @@ class Rectangle:
 if __name__ == '__main__':
     a = Rectangle(5)
     b = Rectangle(5, 2)
+    print(f'Документация класса: {Rectangle.__doc__}')

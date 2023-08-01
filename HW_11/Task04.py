@@ -33,6 +33,12 @@ class Matrix:
                 if self.matr[i][j] != other.matr[i][j]:
                     return False
         return True
+    
+    #  def __eq__(self, other):
+    #     """сравнение матриц"""
+    #     if self.matr != other.matr:
+    #         return False
+    #     return True
 
     def __add__(self, other):
         """метод сложения матриц
@@ -61,7 +67,7 @@ class Matrix:
         return Matrix(mult_matr)
 
     def __str__(self):
-        return f'Матрица {self.matr}'
+        return f'{self.matr}'
 
     def __repr__(self):
         return f'Матрица: (matrix = {self.matr}, rows = {self.rows}, coloms = {self.coloms})'
@@ -76,6 +82,20 @@ matr2 = Matrix([[1, 2, 3],
                 [1, 2, 3],
                 [1, 2, 3]])
 # print(repr(matr2))
+print('\nМатрица 1:\n')
+print(matr1)
+print('\nМатрица 2:\n')
+print(matr2)
+print(f'\nСравнение матриц: {matr1 == matr2}\n')
+matr5 = matr1 + matr2
+print(f'Сложение матриц: {matr5}\n')
+matr6 = matr1 * matr2
+print(f'Умножение матриц: {matr6}\n')
+
+
+# *******************************************
+# вывод с использованием метода вывода на печать - print_matr:
+
 # print(f'Сравниваем матрицы: \n{matr1 == matr2}\n')
 # print('Матрица 1: ')
 # matr1.print_matr()
@@ -85,5 +105,5 @@ matr2 = Matrix([[1, 2, 3],
 # print(f'Складываем матрицы: ')
 # matr3.print_matr()
 matr4 = matr1 * matr2
-print(f'Умножаем матрицы: ')
+print(f'Умножаем матрицы: (вывод с использованием метода вывода на печать - print_matr)')
 matr4.print_matr()
