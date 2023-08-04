@@ -35,7 +35,7 @@ class Student:
         self.last_name = last_name
         self.first_name = first_name
         self.middle_name = middle_name
-        self.fio = self.last_name + ' ' + self.first_name + ' ' + self.middle_name
+        self.fio = last_name + ' ' + first_name + ' ' + middle_name
         self.subjects = self.file_subjects(file)
         self.grade = {subject: [] for subject in self.subjects}
         self.result_of_tests = {subject: [] for subject in self.subjects}
@@ -46,8 +46,8 @@ class Student:
         subject = []
         with open(file, 'r', encoding='utf-8') as f_csv:
             reader = csv.reader(f_csv)
-            for row in reader:
-                subject.extend(row)
+            for line in reader:
+                subject.extend(line)
         return subject
 
     def add_grade(self, subject, grade):
@@ -100,7 +100,7 @@ class Student:
         return f'Средний балл по тестам по всем предметам - {sum(result_of_tests) / len(result_of_tests)}'
     
     def __str__(self):
-        return f'ФИО: {self.last_name} {self.first_name} {self.middle_name}'
+        return f'ФИО: {self.fio}'
 
 if __name__ == '__main__':
     new_data_1 = Student('Fran', 'Alex', 'Ivanovich', Path('subjects.csv'))
