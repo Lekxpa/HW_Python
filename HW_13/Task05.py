@@ -16,7 +16,6 @@
 # * метод удаления пользователя из списка пользователей проекта
 # * метод сохранения списка пользователей в JSON файл при выходе из контекстного менеджера
 import json
-from pathlib import Path
 
 from Task03 import User
 from except_project import NotAllowedError, LevelError, AdminError
