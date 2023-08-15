@@ -1,0 +1,3 @@
+INFO  2023-08-15 17:14:14,413 Data_path(name='Dir', extention='', directory=True, parent_directory='HW_15')
+INFO  2023-08-15 17:14:14,413 Data_path(name='touch', extention='.py', directory=False, parent_directory='Dir')
+INFO  2023-08-15 17:14:14,413 Data_path(name='Task01', extention='.py', directory=False, parent_directory='HW_15')
